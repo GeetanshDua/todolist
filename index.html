@@ -3,26 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d7e3b57801.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>To Do List-App</title>
   </head>
   <body>
-    <div class="main-container">
-      <div class="navbar">
-        <h1>TO DO LIST</h1>
-      </div>
-      <div class="container">
-        <div class="left-section">
-          <ul>
-            <li><a href="#">DASHBOARD</a></li>
-            <li><a href="#">MY TASK</a></li>
-            <li><a href="#">NEW FEATURE</a></li>
-            <li><a href="#">COMING SOON</a></li>
-            <li><a href="#">CONTACT US</a></li>
-            <li><a href="#">ABOUT</a></li>
-          </ul>
+    <div class="container">
+      <div class="app-container">
+        <div class="app">
+          <div class="app-title">
+            <h1>
+              <i class="fa-solid fa-list-check fa-sm" style="color: #60b5ff"></i
+              >To Do List
+            </h1>
+          </div>
+          <div class="app-input">
+            <input type="text" /> <button>Add</button>
+          </div>
+          <div class="task-list"></div>
         </div>
-        <div class="right-section"></div>
       </div>
     </div>
   </body>
