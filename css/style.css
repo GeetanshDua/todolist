@@ -5,7 +5,8 @@
 }
 
 :root {
-  --background: rgb(96, 181, 255);
+  --background: rgb(138, 201, 255);
+  --theme: rgb(69, 168, 255);
 }
 
 .container {
@@ -30,7 +31,7 @@
   text-align: center;
   margin: 20px 0px;
   font-family: sans-serif, arial;
-  color: var(--background);
+  color: var(--theme);
 }
 
 .app-title i {
@@ -55,10 +56,44 @@
 .app-input button {
   height: 30px;
   width: 70px;
-  background-color: var(--background);
+  background-color: var(--theme);
   border: none;
   border-radius: 5px;
   color: white;
   cursor: pointer;
   margin-left: 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.app-task {
+  height: 325px;
+  overflow-y: auto;
+}
+
+.task-list ul {
+  list-style: none;
+}
+
+.task-list ul li {
+  height: 30px;
+  border-radius: 6px;
+  margin: 12px;
+  display: flex;
+  align-items: center;
+  padding: 20px 12px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+.task-list ul li:hover {
+  background-color: rgb(233, 232, 232);
+  transition: all ease 0.5s;
+}
+
+.task-list ul li input {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  cursor: pointer;
 }
