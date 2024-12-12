@@ -2,11 +2,32 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Roboto;
 }
 
 :root {
-  --background: rgb(138, 201, 255);
+  --background: rgb(125, 194, 255);
   --theme: rgb(69, 168, 255);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dbdada;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--background);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme);
 }
 
 .container {
@@ -30,7 +51,6 @@
 .app-title h1 {
   text-align: center;
   margin: 20px 0px;
-  font-family: sans-serif, arial;
   color: var(--theme);
 }
 
@@ -41,6 +61,7 @@
 .app-input {
   display: flex;
   align-items: center;
+  margin-bottom: 8px;
 }
 
 .app-input input {
@@ -63,12 +84,15 @@
   cursor: pointer;
   margin-left: 4px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .app-task {
   height: 325px;
   overflow-y: auto;
+  /* border: 2px solid rgb(173, 173, 173); */
+  /* border-radius: 5px; */
+  /* scrollbar-width: none; */
 }
 
 .task-list ul {
@@ -84,6 +108,8 @@
   padding: 20px 12px;
   transition: all ease 0.5s;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .task-list ul li:hover {
