@@ -95,6 +95,23 @@
   /* scrollbar-width: none; */
 }
 
+.task-list ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-list ul li:hover {
+  .delete-btn {
+    opacity: 100%;
+    transition: all ease 0.5s;
+  }
+}
+
+.task-list-left {
+  display: flex;
+  align-items: center;
+}
+
 .task-list ul {
   list-style: none;
 }
@@ -107,7 +124,7 @@
   align-items: center;
   padding: 20px 12px;
   transition: all ease 0.5s;
-  cursor: pointer;
+  cursor: default;
   font-size: 16px;
   font-weight: 400;
 }
@@ -122,4 +139,18 @@
   height: 20px;
   margin-right: 20px;
   cursor: pointer;
+}
+
+.delete-btn {
+  border-radius: 30px;
+  opacity: 0%;
+  width: 26px;
+  height: 26px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(233, 232, 232);
+}
+
+.delete-btn:hover {
+  background-color: rgb(204, 204, 204);
 }
