@@ -47,7 +47,7 @@ function removeTask(event){
 
 addBtn.addEventListener('click', addTask);
 
-taskInput.addEventListener('keypress', function event(){
+taskInput.addEventListener('keypress', function (event){
   if(event.key === "Enter"){
     addTask();
   }
