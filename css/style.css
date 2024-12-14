@@ -99,6 +99,7 @@
 .app-task {
   height: 325px;
   overflow-y: auto;
+  padding: 0 2%;
   /* border: 2px solid rgb(173, 173, 173); */
   /* border-radius: 5px; */
   /* scrollbar-width: none; */
